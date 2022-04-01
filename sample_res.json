@@ -417,7 +417,187 @@
                     ]
                 }
             }
+        },
+        {
+          "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5e6f69a705718e1a6ae1aac95ece03552c39ffc4.001.1",
+          "type": "Feature",
+          "geometry": {
+              "type": "Polygon",
+              "coordinates": [
+                  [
+                      [
+                          -80.569999899999999,
+                          28.289999999999999
+                      ],
+                      [
+                          -80.640000000000001,
+                          28.279999999999998
+                      ],
+                      [
+                          -80.650000000000006,
+                          28.329999999999998
+                      ],
+                      [
+                          -80.569999899999999,
+                          28.349999999999998
+                      ],
+                      [
+                          -80.569999899999999,
+                          28.289999999999999
+                      ]
+                  ]
+              ]
+          },
+          "properties": {
+              "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5e6f69a705718e1a6ae1aac95ece03552c39ffc4.001.1",
+              "@type": "wx:Alert",
+              "id": "urn:oid:2.49.0.1.840.0.5e6f69a705718e1a6ae1aac95ece03552c39ffc4.001.1",
+              "areaDesc": "Brevard, FL",
+              "geocode": {
+                  "SAME": [
+                      "012009"
+                  ],
+                  "UGC": [
+                      "FLC009"
+                  ]
+              },
+              "affectedZones": [
+                  "https://api.weather.gov/zones/county/FLC009"
+              ],
+              "references": [
+                  {
+                      "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4da909170d38cb420a8a15697c0b3fdd9130b0dd.001.1",
+                      "identifier": "urn:oid:2.49.0.1.840.0.4da909170d38cb420a8a15697c0b3fdd9130b0dd.001.1",
+                      "sender": "w-nws.webmaster@noaa.gov",
+                      "sent": "2022-04-01T08:31:00-04:00"
+                  }
+              ],
+              "sent": "2022-04-01T08:42:00-04:00",
+              "effective": "2022-04-01T08:42:00-04:00",
+              "onset": "2022-04-01T08:42:00-04:00",
+              "expires": "2022-04-01T08:52:00-04:00",
+              "ends": "2022-04-01T08:45:00-04:00",
+              "status": "Actual",
+              "messageType": "Update",
+              "category": "Met",
+              "severity": "Extreme",
+              "certainty": "Observed",
+              "urgency": "Immediate",
+              "event": "Tornado Warning",
+              "sender": "w-nws.webmaster@noaa.gov",
+              "senderName": "NWS Melbourne FL",
+              "headline": "Tornado Warning issued April 1 at 8:42AM EDT until April 1 at 8:45AM EDT by NWS Melbourne FL",
+              "description": "The storm which prompted the warning has weakened below severe\nlimits, and has exited the warned area. Therefore, the warning will\nbe allowed to expire.  However heavy rain is still possible with this\nthunderstorm.",
+              "instruction": null,
+              "response": "Shelter",
+              "parameters": {
+                  "AWIPSidentifier": [
+                      "SVSMLB"
+                  ],
+                  "WMOidentifier": [
+                      "WWUS52 KMLB 011242"
+                  ],
+                  "NWSheadline": [
+                      "THE TORNADO WARNING FOR CENTRAL BREVARD COUNTY WILL EXPIRE AT 845 AM EDT"
+                  ],
+                  "eventMotionDescription": [
+                      "2022-04-01T12:42:00-00:00...storm...246DEG...16KT...28.34,-80.57"
+                  ],
+                  "BLOCKCHANNEL": [
+                      "EAS",
+                      "NWEM",
+                      "CMAS"
+                  ],
+                  "EAS-ORG": [
+                      "WXR"
+                  ],
+                  "VTEC": [
+                      "/O.EXP.KMLB.TO.W.0010.000000T0000Z-220401T1245Z/"
+                  ],
+                  "eventEndingTime": [
+                      "2022-04-01T12:45:00+00:00"
+                  ]
+              }
+          }
+      },
+      {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+            "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+            "@type": "wx:Alert",
+            "id": "urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+            "areaDesc": "Baker, FL; Columbia, FL; Brantley, GA; Charlton, GA; Pierce, GA; Wayne, GA",
+            "geocode": {
+                "SAME": [
+                    "012003",
+                    "012023",
+                    "013025",
+                    "013049",
+                    "013229",
+                    "013305"
+                ],
+                "UGC": [
+                    "FLC003",
+                    "FLC023",
+                    "GAC025",
+                    "GAC049",
+                    "GAC229",
+                    "GAC305"
+                ]
+            },
+            "affectedZones": [
+                "https://api.weather.gov/zones/county/FLC003",
+                "https://api.weather.gov/zones/county/FLC023",
+                "https://api.weather.gov/zones/county/GAC025",
+                "https://api.weather.gov/zones/county/GAC049",
+                "https://api.weather.gov/zones/county/GAC229",
+                "https://api.weather.gov/zones/county/GAC305"
+            ],
+            "references": [],
+            "sent": "2022-03-31T13:51:00-04:00",
+            "effective": "2022-03-31T13:51:00-04:00",
+            "onset": "2022-03-31T13:51:00-04:00",
+            "expires": "2022-03-31T16:00:00-04:00",
+            "ends": "2022-03-31T16:00:00-04:00",
+            "status": "Actual",
+            "messageType": "Alert",
+            "category": "Met",
+            "severity": "Extreme",
+            "certainty": "Possible",
+            "urgency": "Future",
+            "event": "Tornado Watch",
+            "sender": "w-nws.webmaster@noaa.gov",
+            "senderName": "NWS Jacksonville FL",
+            "headline": "Tornado Watch issued March 31 at 1:51PM EDT until March 31 at 4:00PM EDT by NWS Jacksonville FL",
+            "description": "THE NATIONAL WEATHER SERVICE HAS EXTENDED TORNADO WATCH 85 TO\nINCLUDE THE FOLLOWING AREAS UNTIL 4 PM EDT THIS AFTERNOON\n\nIN FLORIDA THIS WATCH INCLUDES 2 COUNTIES\n\nIN NORTHEAST FLORIDA\n\nBAKER\n\nIN NORTHERN FLORIDA\n\nCOLUMBIA\n\nIN GEORGIA THIS WATCH INCLUDES 4 COUNTIES\n\nIN SOUTHEAST GEORGIA\n\nBRANTLEY              CHARLTON              PIERCE\nWAYNE\n\nTHIS INCLUDES THE CITIES OF ATKINSON, BLACKSHEAR, COLUMBIA,\nDOCTORTOWN, FOLKSTON, GARDI, HICKOX, HOBOKEN, HOMELAND, HORTENSE,\nJESUP, LAKE CITY, LULU, MACCLENNY, NAHUNTA, OLENO STATE PARK,\nOLUSTEE, RACE POND, RAYBON, ST. GEORGE,\nSTEPHEN FOSTER STATE PARK, WATERTOWN, WAYNESVILLE, AND WINOKUR.",
+            "instruction": null,
+            "response": "Monitor",
+            "parameters": {
+                "AWIPSidentifier": [
+                    "WCNJAX"
+                ],
+                "WMOidentifier": [
+                    "WWUS62 KJAX 311751"
+                ],
+                "BLOCKCHANNEL": [
+                    "EAS",
+                    "NWEM",
+                    "CMAS"
+                ],
+                "EAS-ORG": [
+                    "WXR"
+                ],
+                "VTEC": [
+                    "/O.EXB.KJAX.TO.A.0085.000000T0000Z-220331T2000Z/"
+                ],
+                "eventEndingTime": [
+                    "2022-03-31T20:00:00+00:00"
+                ]
+            }
         }
+    }
     ],
     "title": "current watches, warnings, and advisories for 30.3827127 N, 87.1274483 W",
     "updated": "2022-03-31T12:00:00+00:00"
