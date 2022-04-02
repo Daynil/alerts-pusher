@@ -12,5 +12,8 @@ export const appConfig = {
     accoundSid: process.env.TWILIO_ACCOUNT_SID,
     accountToken: process.env.TWILIO_AUTH_TOKEN,
     phoneNumber: process.env.TWILIO_PHONE_NUMBER
+  },
+  sendgrid: {
+    apiKey: process.env.SENDGRID_API_KEY
   }
 };

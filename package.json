@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
+    "@sendgrid/mail": "^7.6.2",
     "@types/node": "^17.0.23",
     "@types/node-fetch": "^2.6.1",
     "dotenv": "^16.0.0",
