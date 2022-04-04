@@ -1,7 +1,7 @@
 import fetch, { Headers, HeadersInit, RequestInit } from 'node-fetch';
 import { Stringifiable, stringify } from 'query-string';
 
-const baseUrl = `https://api.weather.gov`;
+const baseUrl = ``;
 
 type Opts = {
   param?: unknown;
@@ -43,7 +43,7 @@ export async function client<T>(
 ): Promise<APIResponse<T>> {
   if (!options) options = {};
   const { param, queryParams, body, headers } = options;
-  let url = `${baseUrl}/${endpoint}`;
+  let url = baseUrl ? `${baseUrl}/${endpoint}` : endpoint;
   if (param) url += `/${param}`;
   if (queryParams)
     url += `?${stringify(
@@ -71,7 +71,7 @@ export async function client<T>(
   const contentType = response.headers.get('content-type');
   let data: T;
   if (contentType && contentType.includes('application/json'))
-    data = await response.json() as T;
+    data = (await response.json()) as T;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   else data = response.body ? ((await response.text()) as any) : {};
   if (response.ok) {
@@ -82,6 +82,7 @@ export async function client<T>(
       headers: response.headers
     };
   } else {
+    console.log(response);
     throw new APIError({
       status: response.status,
       statusText: response.statusText,
@@ -92,137 +93,137 @@ export async function client<T>(
 }
 
 export interface WeatherResponse {
-  "@context": Array<ContextClass | string>;
-  type:       string;
-  features:   Feature[];
-  title:      string;
-  updated:    Date;
+  '@context': Array<ContextClass | string>;
+  type: string;
+  features: Feature[];
+  title: string;
+  updated: Date;
 }
 
 export interface ContextClass {
-  "@version": string;
-  wx:         string;
-  "@vocab":   string;
+  '@version': string;
+  wx: string;
+  '@vocab': string;
 }
 
 export interface Feature {
-  id:         string;
-  type:       TypeEnum;
-  geometry:   null;
+  id: string;
+  type: TypeEnum;
+  geometry: null;
   properties: Properties;
 }
 
 export interface Properties {
-  "@id":         string;
-  "@type":       Type;
-  id:            string;
-  areaDesc:      string;
-  geocode:       Geocode;
+  '@id': string;
+  '@type': Type;
+  id: string;
+  areaDesc: string;
+  geocode: Geocode;
   affectedZones: string[];
-  references:    Reference[];
-  sent:          Date;
-  effective:     Date;
-  onset:         Date;
-  expires:       Date;
-  ends:          Date;
-  status:        Status;
-  messageType:   MessageType;
-  category:      Category;
-  severity:      Severity;
-  certainty:     Certainty;
-  urgency:       Urgency;
-  event:         string;
-  sender:        Sender;
-  senderName:    SenderName;
-  headline:      string;
-  description:   string;
-  instruction:   null | string;
-  response:      Response;
-  parameters:    Parameters;
+  references: Reference[];
+  sent: Date;
+  effective: Date;
+  onset: Date;
+  expires: Date;
+  ends: Date;
+  status: Status;
+  messageType: MessageType;
+  category: Category;
+  severity: Severity;
+  certainty: Certainty;
+  urgency: Urgency;
+  event: string;
+  sender: Sender;
+  senderName: SenderName;
+  headline: string;
+  description: string;
+  instruction: null | string;
+  response: Response;
+  parameters: Parameters;
 }
 
 export enum Type {
-  WxAlert = "wx:Alert",
+  WxAlert = 'wx:Alert'
 }
 
 export enum Category {
-  Met = "Met",
+  Met = 'Met'
 }
 
 export enum Certainty {
-  Likely = "Likely",
-  Possible = "Possible",
+  Likely = 'Likely',
+  Possible = 'Possible'
 }
 
 export interface Geocode {
   SAME: string[];
-  UGC:  string[];
+  UGC: string[];
 }
 
 export enum MessageType {
-  Alert = "Alert",
-  Update = "Update",
+  Alert = 'Alert',
+  Update = 'Update'
 }
 
 export interface Parameters {
-  AWIPSidentifier:    AWIPSidentifier[];
-  WMOidentifier:      string[];
-  BLOCKCHANNEL:       Blockchannel[];
-  "EAS-ORG"?:         string[];
-  VTEC:               string[];
-  eventEndingTime:    Date[];
-  NWSheadline?:       string[];
+  AWIPSidentifier: AWIPSidentifier[];
+  WMOidentifier: string[];
+  BLOCKCHANNEL: Blockchannel[];
+  'EAS-ORG'?: string[];
+  VTEC: string[];
+  eventEndingTime: Date[];
+  NWSheadline?: string[];
   expiredReferences?: string[];
 }
 
 export enum AWIPSidentifier {
-  Cfwmob = "CFWMOB",
-  Npwmob = "NPWMOB",
-  Wcnmob = "WCNMOB",
+  Cfwmob = 'CFWMOB',
+  Npwmob = 'NPWMOB',
+  Wcnmob = 'WCNMOB'
 }
 
 export enum Blockchannel {
-  Cmas = "CMAS",
-  EAS = "EAS",
-  Nwem = "NWEM",
+  Cmas = 'CMAS',
+  EAS = 'EAS',
+  Nwem = 'NWEM'
 }
 
 export interface Reference {
-  "@id":      string;
+  '@id': string;
   identifier: string;
-  sender:     Sender;
-  sent:       Date;
+  sender: Sender;
+  sent: Date;
 }
 
 export enum Sender {
-  WNwsWebmasterNoaaGov = "w-nws.webmaster@noaa.gov",
+  WNwsWebmasterNoaaGov = 'w-nws.webmaster@noaa.gov'
 }
 
 export enum Response {
-  Avoid = "Avoid",
-  Execute = "Execute",
-  Monitor = "Monitor",
+  Avoid = 'Avoid',
+  Execute = 'Execute',
+  Monitor = 'Monitor'
 }
 
 export enum SenderName {
-  NWSMobileAL = "NWS Mobile AL",
+  NWSMobileAL = 'NWS Mobile AL'
 }
 
 export enum Severity {
-  Extreme = "Extreme",
-  Minor = "Minor",
-  Moderate = "Moderate",
+  Extreme = 'Extreme',
+  Minor = 'Minor',
+  Moderate = 'Moderate'
 }
 
 export enum Status {
-  Actual = "Actual",
+  Actual = 'Actual'
 }
 
 export enum Urgency {
-  Expected = "Expected",
-  Future = "Future",
+  Expected = 'Expected',
+  Future = 'Future'
 }
 
 export enum TypeEnum {
-  Feature = "Feature",
+  Feature = 'Feature'
 }

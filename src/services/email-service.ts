@@ -1,5 +1,5 @@
 import sgMail from '@sendgrid/mail';
-import { appConfig } from './config';
+import { appConfig } from '../util/config';
 
 sgMail.setApiKey(appConfig.sendgrid.apiKey);
 

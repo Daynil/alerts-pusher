@@ -15,5 +15,9 @@ export const appConfig = {
   },
   sendgrid: {
     apiKey: process.env.SENDGRID_API_KEY
+  },
+  discord: {
+    botToken: process.env.DISCORD_BOT_TOKEN,
+    hookUrl: process.env.DISCORD_HOOK_URL
   }
 };
