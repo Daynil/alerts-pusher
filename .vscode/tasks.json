@@ -1,0 +1,16 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "check types",
+      "detail": "Get all typescript errors in problems pane",
+      "script": "check-types",
+      "type": "npm",
+      "isBackground": true,
+      "problemMatcher": "$tsc-watch",
+      "presentation": {
+        "reveal": "silent"
+      }
+    }
+  ]
+}

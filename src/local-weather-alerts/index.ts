@@ -1,19 +1,26 @@
 import { sendDiscordMessage } from '../services/discord-service';
 import { parseJSONFile, writeJSONFile } from '../services/json-service';
-import { WeatherResponse } from '../util/api';
+import { client, WeatherResponse } from '../util/api';
+import { appConfig } from '../util/config';
 
 // TODO: set up tests to make sure this works
 // Use realistic scenario with multiple different JSON inputs (a watch and 2 separate warnings)
+
+export const baseUrl = 'https://api.weather.gov';
 
 export async function getCurrentLocalAlerts() {
   // For testing, we can grab response from state-wide alerts when there are tornado events:
   // https://api.weather.gov/alerts/active?area=AL
   // https://www.weather.gov/documentation/services-web-api
-  // const localAlertsRes = await client<WeatherResponse>(`https://api.weather.gov/alerts/active?point=${appConfig.coordinates}`, 'GET');
+  const localAlertsRes = await client<WeatherResponse>(
+    `${baseUrl}/alerts/active?point=${appConfig.coordinates}`,
+    'GET'
+  );
+  // console.log(localAlertsRes);
   // writeFileSync('sample_res.json', localAlertsRes.data as any)
-  const localAlertsRes = {
-    data: await parseJSONFile<WeatherResponse>('sample_res.json')
-  };
+  // const localAlertsRes = {
+  //   data: await parseJSONFile<WeatherResponse>('sample_res.json')
+  // };
   const localAlerts = localAlertsRes.data.features;
   const staleAlerts = await parseJSONFile<{ alertIds: string[] }>(
     'stale_alerts.json'
@@ -28,7 +35,6 @@ export async function getCurrentLocalAlerts() {
     // I have a Tornado Watch sample in the json sample file too
     if (event.toLowerCase().includes('tornado')) {
       if (!staleAlerts.alertIds.includes(alert.id)) {
-        // await sendTwilioText(headline);
         sendDiscordMessage(headline);
         staleAlerts.alertIds.push(alert.id);
         await writeJSONFile('stale_alerts.json', staleAlerts);
