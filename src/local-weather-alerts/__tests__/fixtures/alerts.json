@@ -1,0 +1,532 @@
+{
+  "tornado_watch_only": {
+    "@context": [
+      "https://geojson.org/geojson-ld/geojson-context.jsonld",
+      {
+        "@version": "1.1",
+        "wx": "https://api.weather.gov/ontology#",
+        "@vocab": "https://api.weather.gov/ontology#"
+      }
+    ],
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+          "@type": "wx:Alert",
+          "id": "urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+          "areaDesc": "Baker, FL; Columbia, FL; Brantley, GA; Charlton, GA; Pierce, GA; Wayne, GA",
+          "geocode": {
+            "SAME": [
+              "012003",
+              "012023",
+              "013025",
+              "013049",
+              "013229",
+              "013305"
+            ],
+            "UGC": ["FLC003", "FLC023", "GAC025", "GAC049", "GAC229", "GAC305"]
+          },
+          "affectedZones": [
+            "https://api.weather.gov/zones/county/FLC003",
+            "https://api.weather.gov/zones/county/FLC023",
+            "https://api.weather.gov/zones/county/GAC025",
+            "https://api.weather.gov/zones/county/GAC049",
+            "https://api.weather.gov/zones/county/GAC229",
+            "https://api.weather.gov/zones/county/GAC305"
+          ],
+          "references": [],
+          "sent": "2022-03-31T13:51:00-04:00",
+          "effective": "2022-03-31T13:51:00-04:00",
+          "onset": "2022-03-31T13:51:00-04:00",
+          "expires": "2022-03-31T16:00:00-04:00",
+          "ends": "2022-03-31T16:00:00-04:00",
+          "status": "Actual",
+          "messageType": "Alert",
+          "category": "Met",
+          "severity": "Extreme",
+          "certainty": "Possible",
+          "urgency": "Future",
+          "event": "Tornado Watch",
+          "sender": "w-nws.webmaster@noaa.gov",
+          "senderName": "NWS Jacksonville FL",
+          "headline": "Tornado Watch issued March 31 at 1:51PM EDT until March 31 at 4:00PM EDT by NWS Jacksonville FL",
+          "description": "THE NATIONAL WEATHER SERVICE HAS EXTENDED TORNADO WATCH 85 TO\nINCLUDE THE FOLLOWING AREAS UNTIL 4 PM EDT THIS AFTERNOON\n\nIN FLORIDA THIS WATCH INCLUDES 2 COUNTIES\n\nIN NORTHEAST FLORIDA\n\nBAKER\n\nIN NORTHERN FLORIDA\n\nCOLUMBIA\n\nIN GEORGIA THIS WATCH INCLUDES 4 COUNTIES\n\nIN SOUTHEAST GEORGIA\n\nBRANTLEY              CHARLTON              PIERCE\nWAYNE\n\nTHIS INCLUDES THE CITIES OF ATKINSON, BLACKSHEAR, COLUMBIA,\nDOCTORTOWN, FOLKSTON, GARDI, HICKOX, HOBOKEN, HOMELAND, HORTENSE,\nJESUP, LAKE CITY, LULU, MACCLENNY, NAHUNTA, OLENO STATE PARK,\nOLUSTEE, RACE POND, RAYBON, ST. GEORGE,\nSTEPHEN FOSTER STATE PARK, WATERTOWN, WAYNESVILLE, AND WINOKUR.",
+          "instruction": null,
+          "response": "Monitor",
+          "parameters": {
+            "AWIPSidentifier": ["WCNJAX"],
+            "WMOidentifier": ["WWUS62 KJAX 311751"],
+            "BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+            "EAS-ORG": ["WXR"],
+            "VTEC": ["/O.EXB.KJAX.TO.A.0085.000000T0000Z-220331T2000Z/"],
+            "eventEndingTime": ["2022-03-31T20:00:00+00:00"]
+          }
+        }
+      },
+      {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8377fa50c3848f81a6e8af86c25a963b8ff64a65.003.3",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8377fa50c3848f81a6e8af86c25a963b8ff64a65.003.3",
+          "@type": "wx:Alert",
+          "id": "urn:oid:2.49.0.1.840.0.8377fa50c3848f81a6e8af86c25a963b8ff64a65.003.3",
+          "areaDesc": "Baldwin Coastal; Escambia Coastal; Santa Rosa Coastal; Okaloosa Coastal",
+          "geocode": {
+            "SAME": ["001003", "012033", "012113", "012091"],
+            "UGC": ["ALZ266", "FLZ202", "FLZ204", "FLZ206"]
+          },
+          "affectedZones": [
+            "https://api.weather.gov/zones/forecast/ALZ266",
+            "https://api.weather.gov/zones/forecast/FLZ202",
+            "https://api.weather.gov/zones/forecast/FLZ204",
+            "https://api.weather.gov/zones/forecast/FLZ206"
+          ],
+          "references": [
+            {
+              "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6ecf4e511617dbace02c5d8015a4a75d0a060f3a.002.3",
+              "identifier": "urn:oid:2.49.0.1.840.0.6ecf4e511617dbace02c5d8015a4a75d0a060f3a.002.3",
+              "sender": "w-nws.webmaster@noaa.gov",
+              "sent": "2022-03-30T22:56:00-05:00"
+            }
+          ],
+          "sent": "2022-03-31T05:28:00-05:00",
+          "effective": "2022-03-31T05:28:00-05:00",
+          "onset": "2022-03-31T05:28:00-05:00",
+          "expires": "2022-03-31T13:30:00-05:00",
+          "ends": "2022-04-02T06:00:00-05:00",
+          "status": "Actual",
+          "messageType": "Update",
+          "category": "Met",
+          "severity": "Moderate",
+          "certainty": "Likely",
+          "urgency": "Expected",
+          "event": "Rip Current Statement",
+          "sender": "w-nws.webmaster@noaa.gov",
+          "senderName": "NWS Mobile AL",
+          "headline": "Rip Current Statement issued March 31 at 5:28AM CDT until April 2 at 6:00AM CDT by NWS Mobile AL",
+          "description": "* WHAT...For the High Surf Warning, dangerously large breaking\nwaves of 8 to 11 feet in the surf zone. For the High Rip\nCurrent Risk, dangerous rip currents.\n\n* WHERE...In Alabama, Baldwin Coastal County. In Florida, Santa\nRosa Coastal, Okaloosa Coastal and Escambia Coastal Counties.\n\n* WHEN...For the High Surf Warning, until 6 PM CDT this evening.\nFor the High Rip Current Risk, through late Friday night.\n\n* IMPACTS...Breaking waves can sweep people off jetties and\ndocks, and into dangerous seas. Life-threatening swimming\nconditions and significant beach erosion can be expected. Rip\ncurrents can sweep even the best swimmers away from shore into\ndeeper water.",
+          "instruction": "Everyone should remain out of the water due to life-threatening\nsurf conditions. Stay off of jetties, piers, and other waterside\ninfrastructure.\n\nSwim near a lifeguard. If caught in a rip current, relax and\nfloat. Don't swim against the current. If able, swim in a\ndirection following the shoreline. If unable to escape, face the\nshore and call or wave for help.",
+          "response": "Avoid",
+          "parameters": {
+            "AWIPSidentifier": ["CFWMOB"],
+            "WMOidentifier": ["WHUS44 KMOB 311028"],
+            "NWSheadline": [
+              "HIGH SURF WARNING REMAINS IN EFFECT UNTIL 6 PM CDT THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT... ...COASTAL FLOOD ADVISORY IS CANCELLED"
+            ],
+            "BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+            "VTEC": ["/O.CON.KMOB.RP.S.0015.000000T0000Z-220402T1100Z/"],
+            "eventEndingTime": ["2022-04-02T11:00:00+00:00"],
+            "expiredReferences": [
+              "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c3ef701de3a13a925fa4939c225d8403a20d4c90.003.3,2022-03-30T14:50:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.86d1d0a14db12e59659c133ab8215a361ab022b0.001.3,2022-03-30T12:05:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.393a8762f4e869c7eda362d8555088c74c2ee3fb.001.3,2022-03-30T03:41:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c56b580365500628e3c5786cc32c082511387347.001.3,2022-03-29T19:50:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.22f4e0ee0253e03c674af7e31425dd4d2efa65fe.001.3,2022-03-29T11:34:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.802d67fecc6a808175957428caa529c3029194d1.001.1,2022-03-29T04:27:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7c20b3dfc92ca4d3a4b34b1cfdf9f5d61f2aedd1.001.1,2022-03-29T00:07:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d52571f1b39fd72070eff392275cdb3604ed2d1f.001.1,2022-03-28T13:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d7a74a9336f5c6853f5988def2b46fcf62d826fd.001.1,2021-06-10T17:33:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d44fe7157e8ea7949ecb0b4856fae9a843784c65.001.1,2021-06-11T04:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2d04ae8b55983726cb22d4514ac599c3000e9703.002.1,2021-06-10T11:09:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b406b41766e68736c0ced67e80830406d037d7d9.001.1,2021-06-10T05:03:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2d04ae8b55983726cb22d4514ac599c3000e9703.001.1,2021-06-10T11:09:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.13db2af3af58c36bb7b3eee4cf7e451ec4905391.001.1,2021-06-09T20:25:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16d7df74d11e9eb7afd850f6dc88a90c0bed94a4.001.1,2021-06-09T11:00:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8c61fc97c4def36f6271a3e6b2b709f6ada4aee3.001.1,2021-06-09T05:36:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4ef7585662449d6f33e6710db80a37fa9434e46c.001.1,2021-06-08T22:34:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f8ca985cc02142ecd2e41bd56fe12bf983e7fbbc.001.1,2021-06-08T08:17:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f8ca985cc02142ecd2e41bd56fe12bf983e7fbbc.002.1,2021-06-08T08:17:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.61e24fc6a663b959b11f4c70f824eb32bbb876c7.001.1,2021-06-08T03:56:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d9e1b51ab68e86ee0457b1a1102de0fddd7c46d6.001.1,2021-06-07T22:07:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.64ca6dc582b9c1bafbe7a1ffbc0e195a48a060db.002.1,2021-06-07T09:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a66acbc9b033a32f4318700196be5c0e82a681e1.001.1,2021-06-07T03:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.64ca6dc582b9c1bafbe7a1ffbc0e195a48a060db.001.1,2021-06-07T09:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0ff4f0fa48c1b679d83d885de71877cf8735844c.001.1,2021-06-06T21:05:00-05:00"
+            ]
+          }
+        }
+      }
+    ],
+    "title": "current watches, warnings, and advisories for 30.3827127 N, 87.1274483 W",
+    "updated": "2022-03-31T12:00:00+00:00"
+  },
+  "tornado_watch_warning1": {
+    "@context": [
+      "https://geojson.org/geojson-ld/geojson-context.jsonld",
+      {
+        "@version": "1.1",
+        "wx": "https://api.weather.gov/ontology#",
+        "@vocab": "https://api.weather.gov/ontology#"
+      }
+    ],
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+          "@type": "wx:Alert",
+          "id": "urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+          "areaDesc": "Baker, FL; Columbia, FL; Brantley, GA; Charlton, GA; Pierce, GA; Wayne, GA",
+          "geocode": {
+            "SAME": [
+              "012003",
+              "012023",
+              "013025",
+              "013049",
+              "013229",
+              "013305"
+            ],
+            "UGC": ["FLC003", "FLC023", "GAC025", "GAC049", "GAC229", "GAC305"]
+          },
+          "affectedZones": [
+            "https://api.weather.gov/zones/county/FLC003",
+            "https://api.weather.gov/zones/county/FLC023",
+            "https://api.weather.gov/zones/county/GAC025",
+            "https://api.weather.gov/zones/county/GAC049",
+            "https://api.weather.gov/zones/county/GAC229",
+            "https://api.weather.gov/zones/county/GAC305"
+          ],
+          "references": [],
+          "sent": "2022-03-31T13:51:00-04:00",
+          "effective": "2022-03-31T13:51:00-04:00",
+          "onset": "2022-03-31T13:51:00-04:00",
+          "expires": "2022-03-31T16:00:00-04:00",
+          "ends": "2022-03-31T16:00:00-04:00",
+          "status": "Actual",
+          "messageType": "Alert",
+          "category": "Met",
+          "severity": "Extreme",
+          "certainty": "Possible",
+          "urgency": "Future",
+          "event": "Tornado Watch",
+          "sender": "w-nws.webmaster@noaa.gov",
+          "senderName": "NWS Jacksonville FL",
+          "headline": "Tornado Watch issued March 31 at 1:51PM EDT until March 31 at 4:00PM EDT by NWS Jacksonville FL",
+          "description": "THE NATIONAL WEATHER SERVICE HAS EXTENDED TORNADO WATCH 85 TO\nINCLUDE THE FOLLOWING AREAS UNTIL 4 PM EDT THIS AFTERNOON\n\nIN FLORIDA THIS WATCH INCLUDES 2 COUNTIES\n\nIN NORTHEAST FLORIDA\n\nBAKER\n\nIN NORTHERN FLORIDA\n\nCOLUMBIA\n\nIN GEORGIA THIS WATCH INCLUDES 4 COUNTIES\n\nIN SOUTHEAST GEORGIA\n\nBRANTLEY              CHARLTON              PIERCE\nWAYNE\n\nTHIS INCLUDES THE CITIES OF ATKINSON, BLACKSHEAR, COLUMBIA,\nDOCTORTOWN, FOLKSTON, GARDI, HICKOX, HOBOKEN, HOMELAND, HORTENSE,\nJESUP, LAKE CITY, LULU, MACCLENNY, NAHUNTA, OLENO STATE PARK,\nOLUSTEE, RACE POND, RAYBON, ST. GEORGE,\nSTEPHEN FOSTER STATE PARK, WATERTOWN, WAYNESVILLE, AND WINOKUR.",
+          "instruction": null,
+          "response": "Monitor",
+          "parameters": {
+            "AWIPSidentifier": ["WCNJAX"],
+            "WMOidentifier": ["WWUS62 KJAX 311751"],
+            "BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+            "EAS-ORG": ["WXR"],
+            "VTEC": ["/O.EXB.KJAX.TO.A.0085.000000T0000Z-220331T2000Z/"],
+            "eventEndingTime": ["2022-03-31T20:00:00+00:00"]
+          }
+        }
+      },
+      {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8377fa50c3848f81a6e8af86c25a963b8ff64a65.003.3",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8377fa50c3848f81a6e8af86c25a963b8ff64a65.003.3",
+          "@type": "wx:Alert",
+          "id": "urn:oid:2.49.0.1.840.0.8377fa50c3848f81a6e8af86c25a963b8ff64a65.003.3",
+          "areaDesc": "Baldwin Coastal; Escambia Coastal; Santa Rosa Coastal; Okaloosa Coastal",
+          "geocode": {
+            "SAME": ["001003", "012033", "012113", "012091"],
+            "UGC": ["ALZ266", "FLZ202", "FLZ204", "FLZ206"]
+          },
+          "affectedZones": [
+            "https://api.weather.gov/zones/forecast/ALZ266",
+            "https://api.weather.gov/zones/forecast/FLZ202",
+            "https://api.weather.gov/zones/forecast/FLZ204",
+            "https://api.weather.gov/zones/forecast/FLZ206"
+          ],
+          "references": [
+            {
+              "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6ecf4e511617dbace02c5d8015a4a75d0a060f3a.002.3",
+              "identifier": "urn:oid:2.49.0.1.840.0.6ecf4e511617dbace02c5d8015a4a75d0a060f3a.002.3",
+              "sender": "w-nws.webmaster@noaa.gov",
+              "sent": "2022-03-30T22:56:00-05:00"
+            }
+          ],
+          "sent": "2022-03-31T05:28:00-05:00",
+          "effective": "2022-03-31T05:28:00-05:00",
+          "onset": "2022-03-31T05:28:00-05:00",
+          "expires": "2022-03-31T13:30:00-05:00",
+          "ends": "2022-04-02T06:00:00-05:00",
+          "status": "Actual",
+          "messageType": "Update",
+          "category": "Met",
+          "severity": "Moderate",
+          "certainty": "Likely",
+          "urgency": "Expected",
+          "event": "Rip Current Statement",
+          "sender": "w-nws.webmaster@noaa.gov",
+          "senderName": "NWS Mobile AL",
+          "headline": "Rip Current Statement issued March 31 at 5:28AM CDT until April 2 at 6:00AM CDT by NWS Mobile AL",
+          "description": "* WHAT...For the High Surf Warning, dangerously large breaking\nwaves of 8 to 11 feet in the surf zone. For the High Rip\nCurrent Risk, dangerous rip currents.\n\n* WHERE...In Alabama, Baldwin Coastal County. In Florida, Santa\nRosa Coastal, Okaloosa Coastal and Escambia Coastal Counties.\n\n* WHEN...For the High Surf Warning, until 6 PM CDT this evening.\nFor the High Rip Current Risk, through late Friday night.\n\n* IMPACTS...Breaking waves can sweep people off jetties and\ndocks, and into dangerous seas. Life-threatening swimming\nconditions and significant beach erosion can be expected. Rip\ncurrents can sweep even the best swimmers away from shore into\ndeeper water.",
+          "instruction": "Everyone should remain out of the water due to life-threatening\nsurf conditions. Stay off of jetties, piers, and other waterside\ninfrastructure.\n\nSwim near a lifeguard. If caught in a rip current, relax and\nfloat. Don't swim against the current. If able, swim in a\ndirection following the shoreline. If unable to escape, face the\nshore and call or wave for help.",
+          "response": "Avoid",
+          "parameters": {
+            "AWIPSidentifier": ["CFWMOB"],
+            "WMOidentifier": ["WHUS44 KMOB 311028"],
+            "NWSheadline": [
+              "HIGH SURF WARNING REMAINS IN EFFECT UNTIL 6 PM CDT THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT... ...COASTAL FLOOD ADVISORY IS CANCELLED"
+            ],
+            "BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+            "VTEC": ["/O.CON.KMOB.RP.S.0015.000000T0000Z-220402T1100Z/"],
+            "eventEndingTime": ["2022-04-02T11:00:00+00:00"],
+            "expiredReferences": [
+              "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c3ef701de3a13a925fa4939c225d8403a20d4c90.003.3,2022-03-30T14:50:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.86d1d0a14db12e59659c133ab8215a361ab022b0.001.3,2022-03-30T12:05:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.393a8762f4e869c7eda362d8555088c74c2ee3fb.001.3,2022-03-30T03:41:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c56b580365500628e3c5786cc32c082511387347.001.3,2022-03-29T19:50:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.22f4e0ee0253e03c674af7e31425dd4d2efa65fe.001.3,2022-03-29T11:34:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.802d67fecc6a808175957428caa529c3029194d1.001.1,2022-03-29T04:27:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7c20b3dfc92ca4d3a4b34b1cfdf9f5d61f2aedd1.001.1,2022-03-29T00:07:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d52571f1b39fd72070eff392275cdb3604ed2d1f.001.1,2022-03-28T13:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d7a74a9336f5c6853f5988def2b46fcf62d826fd.001.1,2021-06-10T17:33:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d44fe7157e8ea7949ecb0b4856fae9a843784c65.001.1,2021-06-11T04:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2d04ae8b55983726cb22d4514ac599c3000e9703.002.1,2021-06-10T11:09:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b406b41766e68736c0ced67e80830406d037d7d9.001.1,2021-06-10T05:03:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2d04ae8b55983726cb22d4514ac599c3000e9703.001.1,2021-06-10T11:09:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.13db2af3af58c36bb7b3eee4cf7e451ec4905391.001.1,2021-06-09T20:25:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16d7df74d11e9eb7afd850f6dc88a90c0bed94a4.001.1,2021-06-09T11:00:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8c61fc97c4def36f6271a3e6b2b709f6ada4aee3.001.1,2021-06-09T05:36:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4ef7585662449d6f33e6710db80a37fa9434e46c.001.1,2021-06-08T22:34:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f8ca985cc02142ecd2e41bd56fe12bf983e7fbbc.001.1,2021-06-08T08:17:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f8ca985cc02142ecd2e41bd56fe12bf983e7fbbc.002.1,2021-06-08T08:17:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.61e24fc6a663b959b11f4c70f824eb32bbb876c7.001.1,2021-06-08T03:56:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d9e1b51ab68e86ee0457b1a1102de0fddd7c46d6.001.1,2021-06-07T22:07:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.64ca6dc582b9c1bafbe7a1ffbc0e195a48a060db.002.1,2021-06-07T09:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a66acbc9b033a32f4318700196be5c0e82a681e1.001.1,2021-06-07T03:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.64ca6dc582b9c1bafbe7a1ffbc0e195a48a060db.001.1,2021-06-07T09:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0ff4f0fa48c1b679d83d885de71877cf8735844c.001.1,2021-06-06T21:05:00-05:00"
+            ]
+          }
+        }
+      },
+      {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5e6f69a705718e1a6ae1aac95ece03552c39ffc4.001.1",
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-80.569999899999999, 28.289999999999999],
+              [-80.640000000000001, 28.279999999999998],
+              [-80.650000000000006, 28.329999999999998],
+              [-80.569999899999999, 28.349999999999998],
+              [-80.569999899999999, 28.289999999999999]
+            ]
+          ]
+        },
+        "properties": {
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5e6f69a705718e1a6ae1aac95ece03552c39ffc4.001.1",
+          "@type": "wx:Alert",
+          "id": "urn:oid:2.49.0.1.840.0.5e6f69a705718e1a6ae1aac95ece03552c39ffc4.001.1",
+          "areaDesc": "Brevard, FL",
+          "geocode": {
+            "SAME": ["012009"],
+            "UGC": ["FLC009"]
+          },
+          "affectedZones": ["https://api.weather.gov/zones/county/FLC009"],
+          "references": [
+            {
+              "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4da909170d38cb420a8a15697c0b3fdd9130b0dd.001.1",
+              "identifier": "urn:oid:2.49.0.1.840.0.4da909170d38cb420a8a15697c0b3fdd9130b0dd.001.1",
+              "sender": "w-nws.webmaster@noaa.gov",
+              "sent": "2022-04-01T08:31:00-04:00"
+            }
+          ],
+          "sent": "2022-04-01T08:42:00-04:00",
+          "effective": "2022-04-01T08:42:00-04:00",
+          "onset": "2022-04-01T08:42:00-04:00",
+          "expires": "2022-04-01T08:52:00-04:00",
+          "ends": "2022-04-01T08:45:00-04:00",
+          "status": "Actual",
+          "messageType": "Update",
+          "category": "Met",
+          "severity": "Extreme",
+          "certainty": "Observed",
+          "urgency": "Immediate",
+          "event": "Tornado Warning",
+          "sender": "w-nws.webmaster@noaa.gov",
+          "senderName": "NWS Melbourne FL",
+          "headline": "Tornado Warning issued April 1 at 8:42AM EDT until April 1 at 8:45AM EDT by NWS Melbourne FL",
+          "description": "The storm which prompted the warning has weakened below severe\nlimits, and has exited the warned area. Therefore, the warning will\nbe allowed to expire.  However heavy rain is still possible with this\nthunderstorm.",
+          "instruction": null,
+          "response": "Shelter",
+          "parameters": {
+            "AWIPSidentifier": ["SVSMLB"],
+            "WMOidentifier": ["WWUS52 KMLB 011242"],
+            "NWSheadline": [
+              "THE TORNADO WARNING FOR CENTRAL BREVARD COUNTY WILL EXPIRE AT 845 AM EDT"
+            ],
+            "eventMotionDescription": [
+              "2022-04-01T12:42:00-00:00...storm...246DEG...16KT...28.34,-80.57"
+            ],
+            "BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+            "EAS-ORG": ["WXR"],
+            "VTEC": ["/O.EXP.KMLB.TO.W.0010.000000T0000Z-220401T1245Z/"],
+            "eventEndingTime": ["2022-04-01T12:45:00+00:00"]
+          }
+        }
+      }
+    ],
+    "title": "current watches, warnings, and advisories for 30.3827127 N, 87.1274483 W",
+    "updated": "2022-03-31T12:00:00+00:00"
+  },
+  "tornado_watch_warning2": {
+    "@context": [
+      "https://geojson.org/geojson-ld/geojson-context.jsonld",
+      {
+        "@version": "1.1",
+        "wx": "https://api.weather.gov/ontology#",
+        "@vocab": "https://api.weather.gov/ontology#"
+      }
+    ],
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+          "@type": "wx:Alert",
+          "id": "urn:oid:2.49.0.1.840.0.a9f3726fdd501c6035384d2c66b0bbf5b19dd915.002.1",
+          "areaDesc": "Baker, FL; Columbia, FL; Brantley, GA; Charlton, GA; Pierce, GA; Wayne, GA",
+          "geocode": {
+            "SAME": [
+              "012003",
+              "012023",
+              "013025",
+              "013049",
+              "013229",
+              "013305"
+            ],
+            "UGC": ["FLC003", "FLC023", "GAC025", "GAC049", "GAC229", "GAC305"]
+          },
+          "affectedZones": [
+            "https://api.weather.gov/zones/county/FLC003",
+            "https://api.weather.gov/zones/county/FLC023",
+            "https://api.weather.gov/zones/county/GAC025",
+            "https://api.weather.gov/zones/county/GAC049",
+            "https://api.weather.gov/zones/county/GAC229",
+            "https://api.weather.gov/zones/county/GAC305"
+          ],
+          "references": [],
+          "sent": "2022-03-31T13:51:00-04:00",
+          "effective": "2022-03-31T13:51:00-04:00",
+          "onset": "2022-03-31T13:51:00-04:00",
+          "expires": "2022-03-31T16:00:00-04:00",
+          "ends": "2022-03-31T16:00:00-04:00",
+          "status": "Actual",
+          "messageType": "Alert",
+          "category": "Met",
+          "severity": "Extreme",
+          "certainty": "Possible",
+          "urgency": "Future",
+          "event": "Tornado Watch",
+          "sender": "w-nws.webmaster@noaa.gov",
+          "senderName": "NWS Jacksonville FL",
+          "headline": "Tornado Watch issued March 31 at 1:51PM EDT until March 31 at 4:00PM EDT by NWS Jacksonville FL",
+          "description": "THE NATIONAL WEATHER SERVICE HAS EXTENDED TORNADO WATCH 85 TO\nINCLUDE THE FOLLOWING AREAS UNTIL 4 PM EDT THIS AFTERNOON\n\nIN FLORIDA THIS WATCH INCLUDES 2 COUNTIES\n\nIN NORTHEAST FLORIDA\n\nBAKER\n\nIN NORTHERN FLORIDA\n\nCOLUMBIA\n\nIN GEORGIA THIS WATCH INCLUDES 4 COUNTIES\n\nIN SOUTHEAST GEORGIA\n\nBRANTLEY              CHARLTON              PIERCE\nWAYNE\n\nTHIS INCLUDES THE CITIES OF ATKINSON, BLACKSHEAR, COLUMBIA,\nDOCTORTOWN, FOLKSTON, GARDI, HICKOX, HOBOKEN, HOMELAND, HORTENSE,\nJESUP, LAKE CITY, LULU, MACCLENNY, NAHUNTA, OLENO STATE PARK,\nOLUSTEE, RACE POND, RAYBON, ST. GEORGE,\nSTEPHEN FOSTER STATE PARK, WATERTOWN, WAYNESVILLE, AND WINOKUR.",
+          "instruction": null,
+          "response": "Monitor",
+          "parameters": {
+            "AWIPSidentifier": ["WCNJAX"],
+            "WMOidentifier": ["WWUS62 KJAX 311751"],
+            "BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+            "EAS-ORG": ["WXR"],
+            "VTEC": ["/O.EXB.KJAX.TO.A.0085.000000T0000Z-220331T2000Z/"],
+            "eventEndingTime": ["2022-03-31T20:00:00+00:00"]
+          }
+        }
+      },
+      {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8377fa50c3848f81a6e8af86c25a963b8ff64a65.003.3",
+        "type": "Feature",
+        "geometry": null,
+        "properties": {
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.8377fa50c3848f81a6e8af86c25a963b8ff64a65.003.3",
+          "@type": "wx:Alert",
+          "id": "urn:oid:2.49.0.1.840.0.8377fa50c3848f81a6e8af86c25a963b8ff64a65.003.3",
+          "areaDesc": "Baldwin Coastal; Escambia Coastal; Santa Rosa Coastal; Okaloosa Coastal",
+          "geocode": {
+            "SAME": ["001003", "012033", "012113", "012091"],
+            "UGC": ["ALZ266", "FLZ202", "FLZ204", "FLZ206"]
+          },
+          "affectedZones": [
+            "https://api.weather.gov/zones/forecast/ALZ266",
+            "https://api.weather.gov/zones/forecast/FLZ202",
+            "https://api.weather.gov/zones/forecast/FLZ204",
+            "https://api.weather.gov/zones/forecast/FLZ206"
+          ],
+          "references": [
+            {
+              "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.6ecf4e511617dbace02c5d8015a4a75d0a060f3a.002.3",
+              "identifier": "urn:oid:2.49.0.1.840.0.6ecf4e511617dbace02c5d8015a4a75d0a060f3a.002.3",
+              "sender": "w-nws.webmaster@noaa.gov",
+              "sent": "2022-03-30T22:56:00-05:00"
+            }
+          ],
+          "sent": "2022-03-31T05:28:00-05:00",
+          "effective": "2022-03-31T05:28:00-05:00",
+          "onset": "2022-03-31T05:28:00-05:00",
+          "expires": "2022-03-31T13:30:00-05:00",
+          "ends": "2022-04-02T06:00:00-05:00",
+          "status": "Actual",
+          "messageType": "Update",
+          "category": "Met",
+          "severity": "Moderate",
+          "certainty": "Likely",
+          "urgency": "Expected",
+          "event": "Rip Current Statement",
+          "sender": "w-nws.webmaster@noaa.gov",
+          "senderName": "NWS Mobile AL",
+          "headline": "Rip Current Statement issued March 31 at 5:28AM CDT until April 2 at 6:00AM CDT by NWS Mobile AL",
+          "description": "* WHAT...For the High Surf Warning, dangerously large breaking\nwaves of 8 to 11 feet in the surf zone. For the High Rip\nCurrent Risk, dangerous rip currents.\n\n* WHERE...In Alabama, Baldwin Coastal County. In Florida, Santa\nRosa Coastal, Okaloosa Coastal and Escambia Coastal Counties.\n\n* WHEN...For the High Surf Warning, until 6 PM CDT this evening.\nFor the High Rip Current Risk, through late Friday night.\n\n* IMPACTS...Breaking waves can sweep people off jetties and\ndocks, and into dangerous seas. Life-threatening swimming\nconditions and significant beach erosion can be expected. Rip\ncurrents can sweep even the best swimmers away from shore into\ndeeper water.",
+          "instruction": "Everyone should remain out of the water due to life-threatening\nsurf conditions. Stay off of jetties, piers, and other waterside\ninfrastructure.\n\nSwim near a lifeguard. If caught in a rip current, relax and\nfloat. Don't swim against the current. If able, swim in a\ndirection following the shoreline. If unable to escape, face the\nshore and call or wave for help.",
+          "response": "Avoid",
+          "parameters": {
+            "AWIPSidentifier": ["CFWMOB"],
+            "WMOidentifier": ["WHUS44 KMOB 311028"],
+            "NWSheadline": [
+              "HIGH SURF WARNING REMAINS IN EFFECT UNTIL 6 PM CDT THIS EVENING... ...HIGH RIP CURRENT RISK REMAINS IN EFFECT THROUGH LATE FRIDAY NIGHT... ...COASTAL FLOOD ADVISORY IS CANCELLED"
+            ],
+            "BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+            "VTEC": ["/O.CON.KMOB.RP.S.0015.000000T0000Z-220402T1100Z/"],
+            "eventEndingTime": ["2022-04-02T11:00:00+00:00"],
+            "expiredReferences": [
+              "w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c3ef701de3a13a925fa4939c225d8403a20d4c90.003.3,2022-03-30T14:50:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.86d1d0a14db12e59659c133ab8215a361ab022b0.001.3,2022-03-30T12:05:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.393a8762f4e869c7eda362d8555088c74c2ee3fb.001.3,2022-03-30T03:41:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.c56b580365500628e3c5786cc32c082511387347.001.3,2022-03-29T19:50:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.22f4e0ee0253e03c674af7e31425dd4d2efa65fe.001.3,2022-03-29T11:34:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.802d67fecc6a808175957428caa529c3029194d1.001.1,2022-03-29T04:27:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.7c20b3dfc92ca4d3a4b34b1cfdf9f5d61f2aedd1.001.1,2022-03-29T00:07:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d52571f1b39fd72070eff392275cdb3604ed2d1f.001.1,2022-03-28T13:47:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d7a74a9336f5c6853f5988def2b46fcf62d826fd.001.1,2021-06-10T17:33:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d44fe7157e8ea7949ecb0b4856fae9a843784c65.001.1,2021-06-11T04:52:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2d04ae8b55983726cb22d4514ac599c3000e9703.002.1,2021-06-10T11:09:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.b406b41766e68736c0ced67e80830406d037d7d9.001.1,2021-06-10T05:03:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.2d04ae8b55983726cb22d4514ac599c3000e9703.001.1,2021-06-10T11:09:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.13db2af3af58c36bb7b3eee4cf7e451ec4905391.001.1,2021-06-09T20:25:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.16d7df74d11e9eb7afd850f6dc88a90c0bed94a4.001.1,2021-06-09T11:00:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.8c61fc97c4def36f6271a3e6b2b709f6ada4aee3.001.1,2021-06-09T05:36:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.4ef7585662449d6f33e6710db80a37fa9434e46c.001.1,2021-06-08T22:34:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f8ca985cc02142ecd2e41bd56fe12bf983e7fbbc.001.1,2021-06-08T08:17:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.f8ca985cc02142ecd2e41bd56fe12bf983e7fbbc.002.1,2021-06-08T08:17:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.61e24fc6a663b959b11f4c70f824eb32bbb876c7.001.1,2021-06-08T03:56:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.d9e1b51ab68e86ee0457b1a1102de0fddd7c46d6.001.1,2021-06-07T22:07:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.64ca6dc582b9c1bafbe7a1ffbc0e195a48a060db.002.1,2021-06-07T09:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.a66acbc9b033a32f4318700196be5c0e82a681e1.001.1,2021-06-07T03:35:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.64ca6dc582b9c1bafbe7a1ffbc0e195a48a060db.001.1,2021-06-07T09:53:00-05:00 w-nws.webmaster@noaa.gov,urn:oid:2.49.0.1.840.0.0ff4f0fa48c1b679d83d885de71877cf8735844c.001.1,2021-06-06T21:05:00-05:00"
+            ]
+          }
+        }
+      },
+      {
+        "id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5e6f69a705718e1a6ae1aac95ece03552c39ffc4.001.2",
+        "type": "Feature",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [-80.569999899999999, 28.289999999999999],
+              [-80.640000000000001, 28.279999999999998],
+              [-80.650000000000006, 28.329999999999998],
+              [-80.569999899999999, 28.349999999999998],
+              [-80.569999899999999, 28.289999999999999]
+            ]
+          ]
+        },
+        "properties": {
+          "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.5e6f69a705718e1a6ae1aac95ece03552c39ffc4.001.2",
+          "@type": "wx:Alert",
+          "id": "urn:oid:2.49.0.1.840.0.5e6f69a705718e1a6ae1aac95ece03552c39ffc4.001.1",
+          "areaDesc": "Brevard, FL",
+          "geocode": {
+            "SAME": ["012009"],
+            "UGC": ["FLC009"]
+          },
+          "affectedZones": ["https://api.weather.gov/zones/county/FLC009"],
+          "references": [
+            {
+              "@id": "https://api.weather.gov/alerts/urn:oid:2.49.0.1.840.0.4da909170d38cb420a8a15697c0b3fdd9130b0dd.001.1",
+              "identifier": "urn:oid:2.49.0.1.840.0.4da909170d38cb420a8a15697c0b3fdd9130b0dd.001.1",
+              "sender": "w-nws.webmaster@noaa.gov",
+              "sent": "2022-04-01T08:31:00-04:00"
+            }
+          ],
+          "sent": "2022-04-01T08:42:00-04:00",
+          "effective": "2022-04-01T08:42:00-04:00",
+          "onset": "2022-04-01T08:42:00-04:00",
+          "expires": "2022-04-01T08:52:00-04:00",
+          "ends": "2022-04-01T08:45:00-04:00",
+          "status": "Actual",
+          "messageType": "Update",
+          "category": "Met",
+          "severity": "Extreme",
+          "certainty": "Observed",
+          "urgency": "Immediate",
+          "event": "Tornado Warning",
+          "sender": "w-nws.webmaster@noaa.gov",
+          "senderName": "NWS Melbourne FL",
+          "headline": "Tornado Warning issued April 1 at 10:55AM EDT until April 1 at 11:15AM EDT by NWS Melbourne FL",
+          "description": "The storm which prompted the warning has weakened below severe\nlimits, and has exited the warned area. Therefore, the warning will\nbe allowed to expire.  However heavy rain is still possible with this\nthunderstorm.",
+          "instruction": null,
+          "response": "Shelter",
+          "parameters": {
+            "AWIPSidentifier": ["SVSMLB"],
+            "WMOidentifier": ["WWUS52 KMLB 011242"],
+            "NWSheadline": [
+              "THE TORNADO WARNING FOR CENTRAL BREVARD COUNTY WILL EXPIRE AT 845 AM EDT"
+            ],
+            "eventMotionDescription": [
+              "2022-04-01T12:42:00-00:00...storm...246DEG...16KT...28.34,-80.57"
+            ],
+            "BLOCKCHANNEL": ["EAS", "NWEM", "CMAS"],
+            "EAS-ORG": ["WXR"],
+            "VTEC": ["/O.EXP.KMLB.TO.W.0010.000000T0000Z-220401T1245Z/"],
+            "eventEndingTime": ["2022-04-01T12:45:00+00:00"]
+          }
+        }
+      }
+    ],
+    "title": "current watches, warnings, and advisories for 30.3827127 N, 87.1274483 W",
+    "updated": "2022-03-31T12:00:00+00:00"
+  }
+}
