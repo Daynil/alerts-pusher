@@ -15,3 +15,9 @@ For existing alert code, adjust `src/start.ts` to desired interval and length of
 For new alerts, create a folder in `src` exposing a top level function to call, then repeat above.
 
 Can schedule multiple alerts.
+
+## Future:
+
+Currently only utilizing discord message alerts.
+
+Can also implement texting, calling, and/or emailing alerts, depending on particular alert needs.
