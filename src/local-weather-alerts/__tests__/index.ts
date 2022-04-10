@@ -75,16 +75,14 @@ test('weather alerts are properly reported', async () => {
   expect(mockedSendDiscordMessage).not.toHaveBeenCalled();
 
   // Finally, if cache is clear and we get a watch and a warning
-  // We get one message trigger for each
+  // We get a message containing both
   await clearStaleAlerts();
   mockedSendDiscordMessage.mockClear();
   await getCurrentLocalAlerts();
-  expect(mockedSendDiscordMessage).toHaveBeenCalledTimes(2);
+  expect(mockedSendDiscordMessage).toHaveBeenCalledTimes(1);
   expect(mockedSendDiscordMessage).toHaveBeenCalledWith(
-    expect.stringMatching(/tornado watch/i)
-  );
-  expect(mockedSendDiscordMessage).toHaveBeenCalledWith(
-    expect.stringMatching(/tornado warning/i)
+    expect.stringMatching(/tornado watch/i) &&
+      expect.stringMatching(/tornado warning/i)
   );
 
   await clearStaleAlerts();

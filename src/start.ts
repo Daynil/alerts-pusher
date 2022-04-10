@@ -1,5 +1,9 @@
 import { getCurrentLocalAlerts } from './local-weather-alerts';
+import { runAtIntervalForLengthOfTime, timeToMS } from './util/util';
 
-// TODO: set up for every hour checks for tornado watch, ever minute checks for tornado warning, etc
-
-getCurrentLocalAlerts();
+runAtIntervalForLengthOfTime(
+  timeToMS(1, 'second'),
+  timeToMS(3, 'minute'),
+  getCurrentLocalAlerts,
+  'tornado'
+);

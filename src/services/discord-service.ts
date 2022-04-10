@@ -4,7 +4,12 @@ import { appConfig } from '../util/config';
 const alertsRoleTagCode = '<@&858752339761168384>';
 
 /**
- * Make sure to set allow discord messages to override do not disturb on phone if needed.
+ * Send a Discord message to IP alerts channel via webhook.
+ * Enforce 1 second between messages to avoid hitting rate limits.
+ *
+ * **Make sure to set allow Discord messages to override do not disturb
+ *    on phone if needed**.
+ *
  */
 export async function sendDiscordMessage(message: string) {
   client(appConfig.discord.hookUrl, 'POST', {
@@ -14,3 +19,5 @@ export async function sendDiscordMessage(message: string) {
     }
   });
 }
+
+// export const sendDiscordMessage = spacedCalls(sendDiscordMessageRaw, 1000);

@@ -30,6 +30,7 @@
   },
   "scripts": {
     "start": "ts-node ./src/start.ts",
+    "start:debug": "cross-env NODE_DEBUG=http ts-node ./src/start.ts",
     "test": "cross-env NODE_ENV=test jest",
     "test:watch": "cross-env NODE_ENV=test npm run test -- --watchAll",
     "lint": "eslint --ignore-path .gitignore ./src",

@@ -55,7 +55,13 @@ export async function client<T>(
 
   const config: RequestInit = {
     method,
-    headers: headers ? headers : {}
+    headers: headers
+      ? headers
+      : // See Authentication section:
+        // https://www.weather.gov/documentation/services-web-api
+        {
+          'User-Agent': '(dlibin.net, dlibinrx@gmail.com)'
+        }
     // headers: {
     //   Authorization: `Bearer ${process.env.AUTH}`
     // }
@@ -70,7 +76,7 @@ export async function client<T>(
 
   const contentType = response.headers.get('content-type');
   let data: T;
-  if (contentType && contentType.includes('application/json'))
+  if (contentType && contentType.includes('json'))
     data = (await response.json()) as T;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   else data = response.body ? ((await response.text()) as any) : {};
