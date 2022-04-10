@@ -28,13 +28,15 @@ afterAll(async () => {
 });
 
 test('weather alerts are properly reported', async () => {
+  const tornadoAlerts = 'tornado';
+
   // First, we retrieve a Tornado Watch only
   server.use(
     rest.get(`${baseUrl}/alerts/active`, (req, res, ctx) => {
       return res(ctx.status(200), ctx.json(alerts.tornado_watch_only));
     })
   );
-  await getCurrentLocalAlerts();
+  await getCurrentLocalAlerts(tornadoAlerts);
   expect(mockedSendDiscordMessage).toHaveBeenCalledTimes(1);
   expect(mockedSendDiscordMessage).toHaveBeenCalledWith(
     expect.stringMatching(/tornado watch/i)
@@ -47,7 +49,7 @@ test('weather alerts are properly reported', async () => {
     })
   );
   mockedSendDiscordMessage.mockClear();
-  await getCurrentLocalAlerts();
+  await getCurrentLocalAlerts(tornadoAlerts);
   // The Watch is cached now, so it no longer triggers a message
   expect(mockedSendDiscordMessage).toHaveBeenCalledTimes(1);
   // The Warning is the only message trigger now
@@ -62,7 +64,7 @@ test('weather alerts are properly reported', async () => {
     })
   );
   mockedSendDiscordMessage.mockClear();
-  await getCurrentLocalAlerts();
+  await getCurrentLocalAlerts(tornadoAlerts);
   expect(mockedSendDiscordMessage).toHaveBeenCalledTimes(1);
   // The Warning is still the only message trigger
   expect(mockedSendDiscordMessage).toHaveBeenCalledWith(
@@ -71,14 +73,14 @@ test('weather alerts are properly reported', async () => {
 
   // Same alert repeated, should now be stale
   mockedSendDiscordMessage.mockClear();
-  await getCurrentLocalAlerts();
+  await getCurrentLocalAlerts(tornadoAlerts);
   expect(mockedSendDiscordMessage).not.toHaveBeenCalled();
 
   // Finally, if cache is clear and we get a watch and a warning
   // We get a message containing both
   await clearStaleAlerts();
   mockedSendDiscordMessage.mockClear();
-  await getCurrentLocalAlerts();
+  await getCurrentLocalAlerts(tornadoAlerts);
   expect(mockedSendDiscordMessage).toHaveBeenCalledTimes(1);
   expect(mockedSendDiscordMessage).toHaveBeenCalledWith(
     expect.stringMatching(/tornado watch/i) &&

@@ -1,5 +1,3 @@
-import chalk from 'chalk';
-
 export type valueof<T> = T[keyof T];
 
 export function sleep(sleepLengthInMS: number): Promise<void> {
@@ -20,11 +18,9 @@ export async function runAtIntervalForLengthOfTime<
   ..._fnArgs: Parameters<T>
 ) {
   return new Promise<void>((resolve) => {
-    console.log(chalk.cyan('Checked at: ', new Date()));
-    fn();
+    fn(..._fnArgs);
     const intervalId = setInterval(() => {
-      console.log(chalk.cyan('Checked at: ', new Date()));
-      fn();
+      fn(..._fnArgs);
     }, intervalInMS);
     setTimeout(() => {
       clearInterval(intervalId);

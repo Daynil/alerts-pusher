@@ -1,9 +1,12 @@
-import { getCurrentLocalAlerts } from './local-weather-alerts';
+import {
+  clearStaleAlerts,
+  getCurrentLocalAlerts
+} from './local-weather-alerts';
 import { runAtIntervalForLengthOfTime, timeToMS } from './util/util';
 
 runAtIntervalForLengthOfTime(
-  timeToMS(1, 'second'),
-  timeToMS(3, 'minute'),
+  timeToMS(2, 'second'),
+  timeToMS(8, 'second'),
   getCurrentLocalAlerts,
   'tornado'
-);
+).then(() => clearStaleAlerts());
