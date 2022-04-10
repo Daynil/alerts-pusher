@@ -39,7 +39,7 @@ export async function getCurrentLocalAlerts(
 
   const alertsToInform = [];
   for (const alert of localAlerts) {
-    // The alert event, e.g. Tornado Warnning
+    // The alert event, e.g. Tornado Warning
     // Primary field to filter for tornado watch/warning
     const event = alert.properties.event;
     // Short description of what we can send via text
