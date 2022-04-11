@@ -83,8 +83,10 @@ test('weather alerts are properly reported', async () => {
   await getCurrentLocalAlerts(tornadoAlerts);
   expect(mockedSendDiscordMessage).toHaveBeenCalledTimes(1);
   expect(mockedSendDiscordMessage).toHaveBeenCalledWith(
-    expect.stringMatching(/tornado watch/i) &&
-      expect.stringMatching(/tornado warning/i)
+    expect.stringMatching(/tornado watch/i)
+  );
+  expect(mockedSendDiscordMessage).toHaveBeenCalledWith(
+    expect.stringMatching(/tornado warning/i)
   );
 
   await clearStaleAlerts();
