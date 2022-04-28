@@ -16,6 +16,18 @@ For new alerts, create a folder in `src` exposing a top level function to call, 
 
 Can schedule multiple alerts.
 
+Starting in prod:
+
+```
+# start via pm2
+$ pm2 start npm --name "alerts-pusher" -- start
+# stream logs
+$ pm2 logs
+
+# or just
+$ npm start
+```
+
 ## Future:
 
 Currently only utilizing discord message alerts.

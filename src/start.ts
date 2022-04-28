@@ -5,8 +5,8 @@ import {
 import { runAtIntervalForLengthOfTime, timeToMS } from './util/util';
 
 runAtIntervalForLengthOfTime(
-  timeToMS(2, 'second'),
-  timeToMS(8, 'second'),
+  timeToMS(1, 'hour'),
+  timeToMS(10, 'day'),
   getCurrentLocalAlerts,
   'tornado'
 ).then(() => clearStaleAlerts());
